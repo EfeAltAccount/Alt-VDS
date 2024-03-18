@@ -1,13 +1,13 @@
 name: Test VPS (Web)
 
 on: 
-  workflow_dispatch:
+ workflow_dispatch:
         inputs:
           auth:
            description: "CRD Code:"
            required: true
-         pin:
-          description: "Pin:"
+          pin:
+           description: "Pin:"
            required: true
 jobs:
   build:
