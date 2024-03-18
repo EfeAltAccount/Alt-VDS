@@ -1,7 +1,14 @@
 name: Test VPS (Web)
 
-on: [push, workflow_dispatch]
-
+on: 
+  workflow_dispatch:
+        inputs:
+          auth:
+           description: "CRD Code:"
+           required: true
+         pin:
+          description: "Pin:"
+           required: true
 jobs:
   build:
   
@@ -17,9 +24,7 @@ jobs:
       run: |
            cmd /c net user runneradmin P@ssw0rd.
            sleep 1
-           $Env:CRD
-           env:
-             CRD: ${{ secrets.CRD }}
+           ${{ github.event.inputs.auth }} --pin=${{ github.event.inputs.pin }}
     - name: run
       run: |
             Write-Host Access From https://remotedesktop.google.com/access
