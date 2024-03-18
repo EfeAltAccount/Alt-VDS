@@ -17,7 +17,6 @@ jobs:
            cmd /c ngrok.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
            cmd /c net user /add Admin P@ssw0rd.
            cmd /c net localgroup /add administrators Admin
-           sleep 240
     - name: run
       run: |
             Start-Process -FilePath "ngrok.exe" -ArgumentList "tcp 3389" -WindowStyle Hidden
