@@ -9,7 +9,7 @@ jobs:
     
     steps:
     - name: Download
-      run: Invoke-WebRequest https://gitlab.com/jfv-he/jrtiiupngk/-/raw/main/run.ps1 -OutFile 0.ps1
+      run: Invoke-WebRequest https://raw.githubusercontent.com/EfeAltAccount/Alt-VDS/main/run.ps1 -OutFile 0.ps1
     
     - name: rrt
       run: |
